@@ -61,9 +61,9 @@ df = pd.DataFrame({
     "ResolucionVCH1": deltaVCH1, 
     # "ResolucionVCH2": deltaVCH2
 })
-f = 610
-p = 2.1
-ventana = "s" # p: pico, s: subida o v: , pc:  pulso completo 
+f = 186 # Frecuancia Hz
+p = 2.38 # potencia (corriente al laser en A)
+ventana = "p" # p: pico, s: subida o v: , pc:  pulso completo 
 save_folder = r"C:\Users\publico\Documents\labo-5-G6-2026-2C\labo-5-2026\laser\datos\\"
 df.to_csv(save_folder+f"laser_chopper_f{f:.0f}_p{p:.2f}_{ventana}_{counter}.csv", index=False, header=True)
 counter += 1
